@@ -1,0 +1,27 @@
+/*CSS Reset*/
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*Fonts*/
+*{
+	font-family: 'Acme', sans-serif;
+	color: #6F73D2;
+}
+
+/*Navbar*/
+.navbar{
+	background-color: #A3D5FF;
+}
+
+/*logo*/
+.logo{
+	height: 45px;
+	width: 45px;
+}
+
+/*home*/
+.homepage{
+	background-color: #D9F0FF;
+}
