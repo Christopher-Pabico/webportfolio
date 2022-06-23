@@ -16,6 +16,12 @@
 	opacity: 75%;
 }
 
+/*Navtext*/
+#navtext{
+	color: #6F73D2;
+}
+
+
 /*logo*/
 .logo{
 	height: 45px;
@@ -71,3 +77,6 @@ p{
 	opacity: 75%;
 }
 
+#buttn{
+	background-color: #6F73D2;
+}

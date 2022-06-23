@@ -30,16 +30,16 @@
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav ml-auto">
 	      <li class="nav-item">
-	        <a class="nav-link" href="#homepage">Home</a>
+	        <a class="nav-link" href="#homepage" id="navtext">Home</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#skills">Skills</a>
+	        <a class="nav-link" href="#skills" id="navtext">Skills</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#gallery">Gallery</a>
+	        <a class="nav-link" href="#gallery" id="navtext">Gallery</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#contact">Contact Me</a>
+	        <a class="nav-link" href="#contact" id="navtext">Contact Me</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -65,7 +65,7 @@
 				</a>
 			</div>
 			<div class="col-md-12">
-				<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p class="text-justified m-0 pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -268,18 +268,100 @@
 		<!-- end of carousel -->
 
 		<!-- cat-images -->
-		<div class="row justify-content-between">		
+		<div class="row justify-content-between">
+			<!-- cat1 -->
 			<div class="col-md-3">
-				<img src="images/cat-1.jpg" class="img-fluid">
+				<img src="images/cat-1.jpg" class="img-fluid" id="cats" data-toggle="modal" data-target="#cat1">
 			</div>
-			<div class="col-md-3">
-				<img src="images/cat-2.jpg" class="img-fluid">
+			<div class="modal fade text-dark" id="cat1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Cat# 1</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body mx-auto">
+			        <img src="images/cat-1.jpg" class="img-fluid">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
 			</div>
+			<!-- End of cat1 -->
+
+			<!-- cat2 -->
 			<div class="col-md-3">
-				<img src="images/cat-3.jpg" class="img-fluid">
+				<img src="images/cat-2.jpg" class="img-fluid" id="cats" data-toggle="modal" data-target="#cat2">
 			</div>
+			<div class="modal fade text-dark" id="cat2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Cat# 2</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body mx-auto">
+			        <img src="images/cat-2.jpg" class="img-fluid">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- End of cat2 -->
+
+			<!-- cat3 -->
 			<div class="col-md-3">
-				<img src="images/cat-4.jpg" class="img-fluid">
+				<img src="images/cat-3.jpg" class="img-fluid" id="cats" data-toggle="modal" data-target="#cat3">
+			</div>
+			<div class="modal fade text-dark" id="cat3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Cat# 3</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body mx-auto">
+			        <img src="images/cat-3.jpg" class="img-fluid">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- End of cat3 -->
+
+			<!-- cat4 -->
+			<div class="col-md-3">
+				<img src="images/cat-4.jpg" class="img-fluid" id="cats" data-toggle="modal" data-target="#cat4">
+			</div>
+			<div class="modal fade text-dark" id="cat4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Cat# 4</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body mx-auto">
+			        <img src="images/cat-4.jpg" class="img-fluid">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
 			</div>
 		</div>
 	</div>
@@ -309,12 +391,12 @@
 					    <label for="message" required>Message</label>
 					    <textarea class="form-control" id="message" rows="5"></textarea>
 					</div>
-					<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >Send Email</button>
+					<button type="submit" class="btn mb-2" data-toggle="modal" data-target="#thankyou" id="buttn">Send Email</button>
 				</form>
 			</div>
 			<!-- End of Form -->
 			<!-- Modal for form -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="thankyou" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -335,7 +417,7 @@
 			<!-- End of modal for form -->
 
 			<!-- G-map -->
-			<div class="col-md-6">
+			<div class="col-md-5">
 				<div class="w-100">
 					<iframe width="600" height="500" id="gmap-canvas" src="https://maps.google.com/maps?q=pasig%20catholic%20college&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 				</div>
@@ -350,7 +432,7 @@
 		<div class="d-flex justify-content-center pt-2">
 			<p class="text-center">© All Rights Reserved 2022</p>
 		</div>
-		<div class="row justify-content-center align-items-center">
+		<div class="row justify-content-center align-items-center m-0">
 			<a href="https://www.facebook.com/pher.xxii/">
 				<button type="button" class="btn btn-link"><span class="bi bi-facebook"></span></button>
 			</a>
