@@ -12,6 +12,7 @@
 
 	<!-- Bootstraps CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
 
 	<!-- Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,24 +21,25 @@
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark">
-	  <a class="navbar-logo text-light" href="#">Christopher Pablico</a>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+	  <a class="navbar-logo" href="#homepage">Christopher Pablico</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav ml-auto">
 	      <li class="nav-item">
-	        <a class="nav-link" href="#home">Home</a>
+	        <a class="nav-link" href="#homepage">Home</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Skills</a>
+	        <a class="nav-link" href="#skills">Skills</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Gallery</a>
+	        <a class="nav-link" href="#gallery">Gallery</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact Me</a>
+	        <a class="nav-link" href="#contact">Contact Me</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -45,26 +47,322 @@
 	<!-- End of Navbar -->
 
 	<!-- Home -->
-	<div class="homepage container-fluid" id="home">
-		<div class="row justify-content-center align-items-center">
-			<div class="col-12 col-md4">
-				<img src="images/profilepic.jpg image-fluid">
-				
+	<div class="container-fluid text-center mt-5" id="homepage">
+		<div class="justify-content-center align-items-center">
+			<div class="col-md-12">
+				<img src="images/profilepic.jpg" class="rounded-circle image-fluid m-3" id="profile-pic">	
 			</div>
-			
+			<h1 class="mt-3 mb-3">Christopher Pablico</h1>
+			<div class="row justify-content-center align-items-center">
+				<a href="https://www.facebook.com/pher.xxii/">
+					<button type="button" class="btn btn-link"><span class="bi bi-facebook"></span></button>
+				</a>
+				<a href="https://www.instagram.com/toffieismyname/">
+					<button type="button" class="btn btn-link"><span class="bi bi-instagram"></span></button>
+				</a>
+				<a href="https://www.linkedin.com/in/christopher-pablico-6118a4137/">
+					<button type="button" class="btn btn-link"><span class="bi bi-linkedin"></span></button>
+				</a>
+			</div>
+			<div class="col-md-12">
+				<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
 		</div>
-
-				
 	</div>
-	
+	<!-- End of Home -->
 
+	<!-- Skills -->
+	<div class="container-fluid text-center justify-content-center" id="skills">
+		<h1>Skills</h1>
+		<div class="justify-content-center align-items-center d-md-flex">
+			<div class="col-md-4 text-center">
+				<img class="img-fluid" src="images/logo-qbo.png" id="otherskills">
+				<h5>Quickbooks</h5>
+				<p>QuickBooks is a full-featured business and financial management suite complete with tools for accounting, inventory, payroll, tax filing, invoicing, bank account tracking and reconciliation, expense management, budgeting, payment processing, and accounts receivable and accounts payable management.</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<img class="img-fluid" src="images/logo-xero.png" id="otherskills">
+				<h5>Xero</h5>
+				<p>Xero is a cloud-based accounting software product that lets small-business owners manage their finances from anywhere and integrate with more than 1,000 apps.</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<img class="img-fluid" src="images/logo-xeropayroll.png" id="otherskills">
+				<h5>Xero Payroll</h5>
+				<p>Pay employees in just a few clicks using Xero's payroll software. Payroll data updates your accounts automatically. Automatic tax, pensions and leave calculations. Flexible pay calendars, tax and pay rates. Email payslips and let employees view them online.</p>
+			</div>
+		</div>
+		<h2>Certificates</h2>
+		<div class="d-md-flex">
+			<!-- certificates -->
+			<!-- Quickbooks -->
+			<div class="col-md-4">
+				<img class="img-fluid" src="images/cert-qbo.png" id="certs" data-toggle="modal" data-target="#qbo">
+			</div>
+			<!-- modal quickbooks -->
+			<div class="modal fade text-dark" id="qbo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Quickbooks Certificate</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body mx-auto">
+			        <img src="images/cert-qbo.png" class="img-fluid">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- End of modal quickbooks -->
 
+			<!-- Xero -->
+			<div class="col-md-4">
+				<img class="img-fluid" src="images/cert-xero.png" id="certs" data-toggle="modal" data-target="#xero">
+			</div>
+			<!-- modal xero -->
+			<div class="modal fade text-dark" id="xero" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Xero Certificate</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body mx-auto">
+			        <img src="images/cert-xero.png" class="img-fluid">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- End of modal xero -->
 
+			<!-- Xero Payroll -->
+			<div class="col-md-4">
+				<img class="img-fluid" src="images/cert-xeropayroll.png" id="certs" data-toggle="modal" data-target="#xeropayroll">
+			</div>
+			<!-- modal xero payroll -->
+			<div class="modal fade text-dark" id="xeropayroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Xero Payroll Certificate</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body mx-auto">
+			        <img src="images/cert-xeropayroll.png" class="img-fluid">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- End of modal xero payroll -->
+		</div>
+		<!-- End of Certificates -->
 
+		<!-- Other Skills -->
+		<div>
+			<h1>Other Skills</h1>
+			<div class="container-fluid align-items-center d-md-flex">
+				<div class="col-md-4 text-center">
+				    <img class="img-fluid" src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg">
+				    <h5>HTML</h5>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-md-4 text-center">
+				    <img class="img-fluid" src="https://labs.tadigital.com/wp-content/uploads/2020/03/MicrosoftTeams-image.png">
+				    <h5>Bootstrap</h5>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<!-- Bootstrap Card End -->
 
+				<!-- Nose JS Server Card Start -->
+				<div class="col-md-4 text-center">
+				    <img class="img-fluid" src="https://clever-solution.com/wp-content/uploads/2020/04/5625%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1-1280x720.png">
+				    <h5>Node JS Server</h5>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<!-- End of Skills -->
 
+	<!-- Gallery -->
+	<div class="container-fluid justify-content-center align-items-center text-center pb-5 pt-3" id="gallery">
+		<h1>Gallery</h1>
 
+		<!-- carousel -->
+		<div class="row d-none d-md-block m-md-5">
+			<div class="col-xl-6 mx-auto">
+				<div id="carouselExampleCaptions" class="carousel slide text-light" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="images/game-1.jpg" class="d-block w-100 img-fluid" alt="..." id="game">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>First slide label</h5>
+				        <p>Sample 1</p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images/game-2.jpg" class="d-block w-100 img-fluid" alt="..." id="game">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>Second slide label</h5>
+				        <p>Sample 2</p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images/game-3.jpg" class="d-block w-100 img-fluid" alt="..." id="game">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>Third slide label</h5>
+				        <p>Sample 3</p>
+				      </div>
+				    </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </button>
+				</div>
+			</div>
+		</div>
+		<!-- end of carousel -->
 
+		<!-- cat-images -->
+		<div class="row justify-content-between">		
+			<div class="col-md-3">
+				<img src="images/cat-1.jpg" class="img-fluid">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cat-2.jpg" class="img-fluid">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cat-3.jpg" class="img-fluid">
+			</div>
+			<div class="col-md-3">
+				<img src="images/cat-4.jpg" class="img-fluid">
+			</div>
+		</div>
+	</div>
+	<!-- End of Gallery -->
+
+	<!-- Contact Section -->
+	<div class="pt-3 container-fluid" id="contact">
+		<h1 class="text-center">Contact Me</h1>
+		<div class="row justify-content-center">
+			<!-- Form -->
+			<div class="col-md-6">
+				<h3>Form</h3>
+				<form class="form-sample">
+					<div id="form-group">
+					    <label for="name">Full Name:</label>
+					    <input type="text" class="form-control" id="name" placeholder="Your Name" required autocomplete>
+					</div>
+					<div class="form-group">
+					    <label for="email">Email:</label>
+					    <input type="email" class="form-control" id="email" placeholder="name@example.com" required autocomplete>
+					</div>
+					<div class="form-group">
+					    <label for="contact">Contact Number:</label>
+					    <input type="text" class="form-control" id="contact" placeholder="+63 900 000 0000" required autocomplete>
+					</div>
+					<div class="form-group">
+					    <label for="message" required>Message</label>
+					    <textarea class="form-control" id="message" rows="5"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >Send Email</button>
+				</form>
+			</div>
+			<!-- End of Form -->
+			<!-- Modal for form -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+			             </button>
+						</div>
+						<div class="modal-body">
+			                            Message Successfully Sent
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End of modal for form -->
+
+			<!-- G-map -->
+			<div class="col-md-6">
+				<div class="w-100">
+					<iframe width="600" height="500" id="gmap-canvas" src="https://maps.google.com/maps?q=pasig%20catholic%20college&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				</div>
+			</div>
+			<!-- End of G-map -->
+		</div>
+	</div>
+	<!-- End of Contact Me -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="d-flex justify-content-center pt-2">
+			<p class="text-center">© All Rights Reserved 2022</p>
+		</div>
+		<div class="row justify-content-center align-items-center">
+			<a href="https://www.facebook.com/pher.xxii/">
+				<button type="button" class="btn btn-link"><span class="bi bi-facebook"></span></button>
+			</a>
+			<a href="https://www.instagram.com/toffieismyname/">
+				<button type="button" class="btn btn-link"><span class="bi bi-instagram"></span></button>
+			</a>
+			<a href="https://www.linkedin.com/in/christopher-pablico-6118a4137/">
+				<button type="button" class="btn btn-link"><span class="bi bi-linkedin"></span></button>
+			</a>
+		</div>
+	</footer>
+	<!-- End of Footer -->
 
 
 	<!-- Bootstrap JS -->

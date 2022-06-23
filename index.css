@@ -13,6 +13,7 @@
 /*Navbar*/
 .navbar{
 	background-color: #A3D5FF;
+	opacity: 75%;
 }
 
 /*logo*/
@@ -22,6 +23,51 @@
 }
 
 /*home*/
-.homepage{
+#homepage{
 	background-color: #D9F0FF;
 }
+
+/*header*/
+#profile-pic{
+	height: 300px;
+	width: 300px;
+}
+
+#skills{
+	background-color: #A3D5FF;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+#otherskills{
+	height: 350px;
+	width: 350px;
+}
+
+#certs{
+	height: 250px;
+	width: 250px;
+}
+
+#gallery{
+	background-color: #83C9F4;
+}
+
+#game{
+	height: 350px;
+	width: 350px;
+}
+
+#gmap-canvas{
+	height: 60vh;
+	width: 100%;
+}
+
+#footer{
+	background-color: #A3D5FF;
+	opacity: 75%;
+}
+
